@@ -32,9 +32,9 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       # t.timestamps
 
-      t.string :name, null: false
-      t.boolean :gender, null: false
-      t.string :role, null: false
+      t.string :name
+      t.boolean :gender
+      t.string :role
     end
 
     add_index :users, :email,                unique: true

@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 20140606234616) do
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
-    t.string   "name",                                null: false
-    t.boolean  "gender",                              null: false
-    t.string   "role",                                null: false
+    t.string   "name"
+    t.boolean  "gender"
+    t.string   "role"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
