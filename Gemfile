@@ -22,6 +22,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'http_accept_language'
+gem 'rails-i18n', '~> 4.0.0'
+gem 'devise-i18n', '~> 0.10.3'
 
 group :development do
   gem 'spring'

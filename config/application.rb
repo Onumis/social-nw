@@ -21,7 +21,7 @@ module SocialNw
     # config.i18n.default_locale = :de
 
     # supported languages
-    config.i18n.available_locales = [:en, :pt]
+    config.i18n.available_locales = [:en, 'pt-BR']
 
     config.generators do |g|
       g.test_framework :rspec,
