@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0'
+gem 'rails', '~> 4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -37,7 +37,7 @@ group :development, :test do
   gem 'guard-spring'
   gem 'factory_girl_rails'
   gem 'pry-stack_explorer'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
   gem 'rails-erd'
   gem 'faker'
   gem 'database_cleaner'
