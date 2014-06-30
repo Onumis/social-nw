@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :infer_locale
 
+  layout "landing"
 
   protected
   def infer_locale
