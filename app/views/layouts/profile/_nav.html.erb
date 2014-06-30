@@ -1,8 +1,8 @@
 <div class="masthead">
   <div class="container">
     <nav class="nav">
-      <%= link_to t('nav.home'), feed_path, class: 'nav-item' %>
-      <%= link_to t('nav.profile'), profile_path(current_user.profile), class: 'nav-item', accesskey: 'p' %>
+      <%= link_to t('nav.home'), feed_path, class: 'nav-item', accesskey: 'h' %>
+      <%= link_to t('nav.profile'), profile_path(current_user.profile), class: 'nav-item' %>
       <%= link_to t('nav.sign_out'), destroy_user_session_path, class: 'nav-item',accesskey: 'o', method: :delete %>
     </nav>
   </div>
