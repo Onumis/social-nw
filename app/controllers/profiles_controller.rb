@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  layout "profile"
+  layout "feed"
   
   before_filter :authenticate_user!
 
