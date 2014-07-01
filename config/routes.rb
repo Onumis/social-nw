@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     end
   end
 
+  root to: 'feeds#index'
   resources :profiles, only: [:show, :edit, :update]
 end

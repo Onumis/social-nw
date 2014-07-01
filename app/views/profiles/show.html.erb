@@ -1,1 +1,9 @@
-Olá, <%= @profile.user.email %>
+<p class="pull-right">
+  <%= link_to 'Editar', edit_profile_path(@profile) %>
+</p>
+<h1>Olá</h1>
+<div>
+  <p>Nome: <%= @profile.name %></p>
+  <p>Email: <%= @profile.email %></p>
+  <p>Sexo: <%= @profile.user.gender_text %></p>
+</div>

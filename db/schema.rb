@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20140623200646) do
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.string   "name"
-    t.boolean  "gender"
+    t.string   "gender"
     t.string   "role"
     t.integer  "profile_id"
   end

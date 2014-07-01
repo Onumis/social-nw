@@ -33,7 +33,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.timestamps
 
       t.string :name
-      t.boolean :gender
+      t.string :gender
       t.string :role
     end
 
