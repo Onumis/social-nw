@@ -25,6 +25,7 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'http_accept_language'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'devise-i18n', '~> 0.10.3'
+gem 'enumerize'
 
 group :development do
   gem 'spring'
