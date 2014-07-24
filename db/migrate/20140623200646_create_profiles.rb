@@ -2,7 +2,7 @@ class CreateProfiles < ActiveRecord::Migration
   def change
     create_table :profiles do |t|
       t.string :url
-      t.string :photo
+      t.attachment :photo
     end
     
     add_column :users, :profile_id, :integer

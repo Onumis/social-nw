@@ -6,4 +6,5 @@
   <p>Nome: <%= @profile.name %></p>
   <p>Email: <%= @profile.email %></p>
   <p>Sexo: <%= @profile.user.gender_text %></p>
+  <p>Photo:<%= image_tag @profile.photo.url(:thumb) %></p>
 </div>

@@ -2,7 +2,7 @@
 
 </form>
 
-<%= form_for @profile, role: 'form' do |f| %>
+<%= form_for @profile, role: 'form', html: { multipart: true } do |f| %>
   <%= f.fields_for :user do |uf| %>
     <div class="form-group">
       <%= uf.label :email, "Email Address" %>
@@ -13,8 +13,13 @@
       <%= uf.text_field :name, class: 'form-control' %>
     </div>
     <div class="form-group">
+      <%= uf.label :gender, "Gender" %>
       <%= uf.select :gender, User.gender.options, {include_blank: true}, {class: 'form-control'} %>
     </div>
   <% end %>
+  <div class="form-group">
+    <%= f.label :photo, "Photo" %>
+    <%= f.file_field :photo, class: 'form-control' %>
+  </div>
   <%= f.submit "Submit", class: "btn btn-primary" %>
 <% end %>
